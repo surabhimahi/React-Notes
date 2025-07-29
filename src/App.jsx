@@ -1,19 +1,29 @@
 // import statement for named functional component
 import {FirstComponent} from "./components/FirstComponents";
+import UserCard from "./components/UserCard";
 
 
 // import statement for default functional component
 // import FirstComponent from "./components/FirstComponents";
 
+// props - properties where we can send data from one component to another component
 export function App()
 {
+  const userName = "react developer";
+  const userAge = 25;
+  const skills = ["html", "css", "javascript", "react"];
   return (
   // fragment 
     <>
-    <h2> this is a sample app compoent </h2>
-    {/* FirstComponent - child component,  App  - parent component */}
-    <FirstComponent />
-    <p> this is paragraph tag from app compoent</p>
+    <h2>This is app component </h2>
+    <div className ="container">
+    <UserCard name ={userName} age ={userAge} skills ={skills} />
+    </div>
+    <UserCard name ={userName} age ={userAge} skills ={skills} />
+    <UserCard name ={userName} age ={userAge} skills ={skills} />
+    
+    {/* sending data /passing props to a component */}
+   
     </>
   );
    

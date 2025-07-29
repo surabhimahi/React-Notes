@@ -8,7 +8,7 @@
 // This is a default export functional component.
 // A jsx file should contain only default export component
 //  Use - This kind of import FirstComponent .... statement for default export 
-export default function FirstComponent(){
+export  function FirstComponent(){
     return (
         
         // code between <> </> is a JSX Element.
@@ -30,7 +30,6 @@ export function SecondComponent(){
         <h2> This is my Second component </h2>
         <app/>
         </>
-
 
     );
 }
